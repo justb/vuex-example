@@ -10,50 +10,44 @@
     </div> -->
     <div>{{fooCount}}</div>
     <button @click="inc()">Increment async</button>
+    <div>{{msg}}</div>
+    <foo number="我是从父组件传过来的" @showbox="toshow"></foo>
+    <bar number="我是从父组件传过来的" ></bar>
   </div>
 </template>
 
 <script>
-// import { mapGetters, mapActions } from 'vuex'
-// export default {
-//   computed: mapGetters([
-//     'count',
-//     'recentHistory'
-//   ]),
-//   // methods: mapActions([
-//   //   'increment',
-//   //   'decrement',
-//   //   'incrementIfOdd',
-//   //   'incrementAsync'
-//   // ])
-//   methods:{
-//     increment(){
-//       console.log(this.$store.state)
-//       this.$store.dispatch('increment')
-//     }
-//   }
-// }
 
-
+import foo from "./Foo";
+import bar from "./Bar";
 export default {
-  // 重要信息：当多次访问路由时，
-  // 避免在客户端重复注册模块。
+  data() {
+    return {
+      msg: ""
+    };
+  },
   destroyed() {
-    this.$store.unregisterModule("foo");
+    // this.$store.unregisterModule("foo");
   },
   computed: {
     fooCount() {
-      return this.$store.state.counter.count
+      return this.$store.state.counter.count;
     }
   },
-  // beforeCreate(store) {
-  //   console.log(store);
-  //   store.registerModule("foo", fooStoreModule);
-  // },
+  beforeCreate(store) {
+    console.log("beforeCreate");
+  },
+  components: {
+    foo,
+    bar
+  },
   methods: {
     inc() {
-      console.log(this.$store)
-      this.$store.dispatch('counter/inc')
+      console.log(this.$store);
+      this.$store.dispatch("counter/inc");
+    },
+    toshow(msg) {
+        this.msg = msg;
     }
   }
 };

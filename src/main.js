@@ -5,19 +5,21 @@ import App from './App'
 import router from './router'
 import Vuex from 'vuex'
 import counter from './store/modules/counter'
+import foobar from './store/modules/foobar'
 Vue.use(Vuex)
-console.log(counter)
 Vue.config.productionTip = false
 const store = new Vuex.Store({
-  modules: {
-    counter
-  }
+    modules: {
+        counter,
+        foobar
+    }
 })
+let Bus = new Vue();
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router,
+    store,
+    template: '<App/>',
+    components: { App }
 })
