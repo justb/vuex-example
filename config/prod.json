@@ -1,0 +1,29 @@
+{
+    "wechat": {
+        "app_id": "wx3e7be59a27e558ad",
+        "app_secret": "38742f0a0014c22461f357ff05867e16",
+        "redirect_url": "http://wechat.ktfootball.com/dashboard",
+        "redirect_school_url": "http://wechat.ktfootball.com/school/dashboard",
+        "redirect_store_url": "http://wechat.ktfootball.com/store/dashboard",
+        "url": "http://wechat.ktfootball.com/",
+        "token": "16d9fe1342b7930126c51a616fdc6371",
+        "aes_key": "gqHYSiv7nQPnl229N8NJ5Il1K9Gp10DPtMvwkjE8Avl"
+    },
+    "bucky": {
+        "host": "https://watchman.ktfootball.com/bucky",
+        "app_key": "a31fc09ce1f4"
+    },
+    "club": {
+        "host": "https://watchman.ktfootball.com/kt-club",
+        "app_key": "1e7e4c9c7407"
+    },
+    "cashier": {
+        "host": "https://watchman.ktfootball.com/kt-cashier",
+        "app_key": "d51f89fe78e4"
+    },
+    "school": {
+        "host": "https://watchman.ktfootball.com/kt-school",
+        "app_key": "c196b0fe9794"
+    },
+    "qiniu": "http://oz0xrw8p5.bkt.clouddn.com/"
+}

@@ -1,0 +1,29 @@
+{
+    "wechat": {
+        "app_id": "wx801107a4dbeb78d5",
+        "app_secret": "dff682c780cafb44e50b7bc2bcb4adeb",
+        "redirect_url": "http://wechat-stg.tempot.com/dashboard",
+        "redirect_school_url": "http://wechat-stg.tempot.com/school/dashboard",
+        "redirect_store_url": "http://wechat-stg.tempot.com/store/dashboard",
+        "url": "http://wechat-stg.tempot.com/",
+        "token": "pinkbanana",
+        "aes_key": "xIxAlckYoEa7uYMsQN6R8mvQCtYsfizdFa9GpDAdDtU"
+    },
+    "bucky": {
+        "host": "https://watchman.ktfootball.com/bucky-stg",
+        "app_key": "d711347ff17a"
+    },
+    "club": {
+        "host": "https://watchman.ktfootball.com/kt-club-stg",
+        "app_key": "e249eaf0f687"
+    },
+    "cashier": {
+        "host": "https://watchman.ktfootball.com/kt-cashier-stg",
+        "app_key": "043c44d578f6"
+    },
+    "school": {
+        "host": "https://watchman.ktfootball.com/kt-school-stg",
+        "app_key": "3ee48df7ca9c"
+    },
+    "qiniu": "http://oz0xrw8p5.bkt.clouddn.com/"
+}
