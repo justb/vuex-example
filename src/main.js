@@ -8,12 +8,13 @@ import counter from './store/modules/counter'
 import foobar from './store/modules/foobar'
 Vue.use(Vuex)
 Vue.config.productionTip = false
-const store = new Vuex.Store({
-    modules: {
-        counter,
-        foobar
-    }
-})
+import store from './store'
+// const store = new Vuex.Store({
+//     modules: {
+//         counter,
+//         foobar
+//     }
+// })
 let Bus = new Vue();
 /* eslint-disable no-new */
 new Vue({

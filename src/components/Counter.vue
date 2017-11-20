@@ -13,12 +13,14 @@
     <div>{{msg}}</div>
     <foo number="我是从父组件传过来的" @showbox="toshow"  v-bind:class="{ active: isActive, 'text-danger': hasError }"></foo>
     <bar number="我是从父组件传过来的" ></bar>
+    <basic ></basic>
   </div>
 </template>
 
 <script>
 import foo from "./Foo";
 import bar from "./Bar";
+import basic from "./Basic";
 export default {
   data() {
     return {
@@ -47,7 +49,8 @@ export default {
   },
   components: {
     foo,
-    bar
+    bar,
+    basic
   },
   methods: {
     inc() {
